@@ -1,13 +1,24 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .drop-menu {
+    @apply p-2 hover:bg-teal-100 transition-all ease-in duration-300;
+  }
+  .card {
+    @apply bg-white hover:bg-teal-50 rounded-md p-4 transition-all ease-in duration-300;
+  }
+  .badge {
+    @apply p-1 my-2 text-xs bg-teal-700 min-w-[2rem] text-white hover:bg-teal-800 rounded-full transition-all ease-in duration-300;
+  }
+  .search-wraper{
+    @apply w-10/12 md:w-8/12 bg-white rounded-full flex items-center justify-between px-4
+  }
+  .serch-input{
+    @apply w-full border-0 focus:outline-none focus:ring-0
+  }
+  .primary-btn{
+    @apply flex items-center justify-center p-4 text-sm my-2 bg-teal-700 text-white hover:bg-teal-800 rounded-md transition-all ease-in duration-300;
+  }
 }
