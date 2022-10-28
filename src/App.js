@@ -5,6 +5,14 @@ import Searchpage from './pages/Searchpage';
 import SharedLayout from './pages/SharedLayout';
 import SingleDrink from './pages/SingleDrink';
 function App() {
+
+
+  // Setting up routes for all pages
+  // SharedLayout = Default page layout with navbar and footer 
+  // Home = home page
+  // SearchPage = Search Listing page
+  // SingleDrink = Recipy/ content page for each drinks
+
   return (
     <BrowserRouter>
       <Routes>

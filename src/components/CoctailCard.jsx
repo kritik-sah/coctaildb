@@ -1,9 +1,7 @@
 import React from 'react'
 import { HiHashtag } from "react-icons/hi2";
 import Badge from './Badge';
-import {
-    useRecoilValue,
-  } from 'recoil';
+import {useRecoilValue} from 'recoil';
 import { InstructionLang } from '../utils/SharedState'
 
 const CoctailCard = ({drink}) => {

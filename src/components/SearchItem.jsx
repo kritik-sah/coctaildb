@@ -1,9 +1,7 @@
 import React from 'react'
-import { HiHashtag, HiOutlineArrowLongRight } from "react-icons/hi2";
+import { HiHashtag } from "react-icons/hi2";
 import Badge from './Badge';
-import {
-    useRecoilValue,
-  } from 'recoil';
+import {useRecoilValue} from 'recoil';
 import { InstructionLang } from '../utils/SharedState'
 import { Link } from 'react-router-dom';
 

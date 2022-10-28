@@ -2,6 +2,7 @@
 # Modern react based Coctail Db Application
 
 [Features (YT)](https://www.youtube.com/c/ITRebels)
+[Features (🔴Live)](https://coctaildb.vercel.app/)
 ## Installation
 
 Clone this Repo

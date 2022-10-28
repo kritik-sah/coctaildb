@@ -8,9 +8,9 @@ import { useRecoilState } from 'recoil';
 import { History } from '../utils/SharedState';
 
 const SingleDrink = () => {
-    const [drinkData, setDrinkData] = useState([]);
-    const [history, setHistory] = useRecoilState(History);
-    const {id} = useParams();
+    const [drinkData, setDrinkData] = useState([]); //local state to render a single drink
+    const [setHistory] = useRecoilState(History);
+    const {id} = useParams(); //getting id from url
 
     const getData = async () => {
         let res = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`);

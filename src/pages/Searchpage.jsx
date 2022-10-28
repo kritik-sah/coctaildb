@@ -2,12 +2,11 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import axios from "axios";
 import SearchItem from '../components/SearchItem'
-import { Link, useParams } from 'react-router-dom';
+import {useParams } from 'react-router-dom';
 
 
 const Searchpage = () => {
   const [searchData, setSearchData] = useState([]);
-  const [isError, setIsError] = useState("");
   const {drink} = useParams();
 
   const getData = async () => {
