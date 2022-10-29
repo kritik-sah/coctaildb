@@ -9,7 +9,7 @@ import { History } from '../utils/SharedState';
 
 const SingleDrink = () => {
     const [drinkData, setDrinkData] = useState([]); //local state to render a single drink
-    const [setHistory] = useRecoilState(History);
+    const [history,setHistory] = useRecoilState(History);
     const {id} = useParams(); //getting id from url
 
     const getData = async () => {
@@ -19,8 +19,9 @@ const SingleDrink = () => {
         
         // Setting History 
         if(drinkData){
+
           setHistory((prevState) => {
-            return [...prevState, ...drinkData]
+            return [ ...drinkData, ...prevState,]
           });
         }
         
